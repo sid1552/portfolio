@@ -5,7 +5,7 @@ function Home() {
   const [text] = useTypewriter({
     words: ['am a Web-Developer', 'love software development'],
     loop: {},
-    typeSpeed: 90,
+    typeSpeed: 125,
     deleteSpeed: 70,
   });
 
