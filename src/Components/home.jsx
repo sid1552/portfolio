@@ -10,7 +10,7 @@ function Home() {
   });
 
   return (
-    <div className="home">
+    <div className="home" id='homes'>
       <div>
         <h1>Hi , my name is Siddharth</h1>
       </div>

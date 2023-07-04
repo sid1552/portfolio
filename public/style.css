@@ -109,3 +109,46 @@ body {
   margin-top: 2%;
   line-height: 1.5;
 }
+
+/* ------------------------------------------------- */
+/* Skills */
+
+.skills-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.skillsheading {
+  font-size: 5rem;
+  color: white;
+  position: relative;
+  top: -9rem;
+  left: -11rem;
+  margin: 20px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  background-color: grey;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  flex-basis: 18%; /* Adjust this value to control the number of skills displayed in a row */
+  box-sizing: border-box;
+  height: 100px;
+}

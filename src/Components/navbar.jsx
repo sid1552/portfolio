@@ -1,29 +1,32 @@
 import React from 'react';
 
 function Navbar() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div>
       <nav className="navbar">
         <ul>
           <li>
-            <a href="#">HOME</a>
+            <a onClick={() => scrollToSection('homes')}>HOME</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a onClick={() => scrollToSection('skills')}>Skills</a>
           </li>
           <li>
-            <a href="#">EXPERIENCE</a>
-          </li>
-
-          <li>
-            <a href="#">PROJECTS</a>
+            <a onClick={() => scrollToSection('experience')}>EXPERIENCE</a>
           </li>
           <li>
-            <a href="#">CONTACT</a>
+            <a onClick={() => scrollToSection('projects')}>PROJECTS</a>
+          </li>
+          <li>
+            <a onClick={() => scrollToSection('contact')}>CONTACT</a>
           </li>
         </ul>
       </nav>
-      
     </div>
   );
 }
